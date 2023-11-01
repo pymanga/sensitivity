@@ -58,3 +58,4 @@ salinities %>%
        x = "Time (year)",
        y = "Salinity (ppt)")
 
+ggsave("sine.jpg")
