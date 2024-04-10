@@ -179,7 +179,7 @@ p4 = data.frame(x = time_sec / 3600 / 24,
     mutate(value = value * 10^3) %>% 
     mutate(key = factor(key,
                         levels = c("ref", "str_a", "str_b"),
-                        labels = c("ref", "-pi/2", "+pi/2"))) %>% 
+                        labels = c("ref", "ref*2", "ref/2"))) %>% 
     ggplot(., aes(x = x, y = value, col = key, linetype = key)) +
     geom_point(size = 1) +
     geom_hline(yintercept = salinity_left*10^3) +
